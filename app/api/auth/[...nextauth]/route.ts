@@ -5,6 +5,7 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import prisma  from "../../../lib/prismadb"
+import { NextRequest } from "next/server";
 
 export const authOptions: AuthOptions = {
     adapter: PrismaAdapter(prisma),
@@ -57,5 +58,14 @@ export const authOptions: AuthOptions = {
     secret: process.env.NEXTAUTH_SECRET,
 }
 
+/// Create next-auth handler
 const handler = NextAuth(authOptions);
-export { handler as GET, handler as POST };
+
+// Export handlers for App Router
+export function GET(req: NextRequest) {
+  return handler(req);
+}
+
+export function POST(req: NextRequest) {
+  return handler(req);
+}
