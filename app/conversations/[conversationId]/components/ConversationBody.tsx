@@ -1,5 +1,4 @@
 "use client";
-
 import { FullMessageType } from "@/app/types";
 import { useEffect, useRef, useState } from "react";
 import MessageBox from "./MessageBox";

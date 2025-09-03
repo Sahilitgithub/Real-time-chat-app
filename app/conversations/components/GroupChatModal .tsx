@@ -1,5 +1,4 @@
 'use client';
-
 import Input from "@/app/components/inputs/Input";
 import Modal from "@/app/components/Modal";
 import  Select from "../../components/inputs/Select";

@@ -1,5 +1,4 @@
 'use client';
-
 import Modal from "@/app/components/Modal";
 import Image from "next/image";
 
