@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'; // Ensure the page is always rendered on the server
 import { auth } from '@/auth'
 import EmptyState from '../components/EmptyState'
 import { redirect } from 'next/navigation';
