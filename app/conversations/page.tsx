@@ -1,14 +1,14 @@
 export const dynamic = 'force-dynamic'; // Ensure the page is always rendered on the server
-import { auth } from "@/auth"
+// import { auth } from "@/auth"
 import ProtectedPage from "./protectedPage"
-import { redirect } from "next/navigation";
+// import { redirect } from "next/navigation";
 
 
 const ConversationHome = async () => {
-  const session = await auth();
-  if(!session?.user){
-    redirect('/')
-  }
+  // const session = await auth();
+  // if(!session?.user){
+  //   redirect('/')
+  // }
   return <ProtectedPage />
 }
 
