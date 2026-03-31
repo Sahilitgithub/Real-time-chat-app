@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
 import bcrypt from "bcryptjs";
