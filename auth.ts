@@ -1,4 +1,3 @@
-export const runtime = "nodejs";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import NextAuth from "next-auth";
 import bcrypt from "bcryptjs";
@@ -66,3 +65,5 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   secret: process.env.AUTH_SECRET,
   debug: process.env.NODE_ENV === "development",
 });
+
+

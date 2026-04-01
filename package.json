@@ -16,7 +16,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "lodash": "^4.17.21",
-    "next": "15.5.2",
+    "next": "^16.2.1",
     "next-auth": "^5.0.0-beta.29",
     "next-cloudinary": "^6.16.0",
     "pusher": "^5.2.0",
@@ -41,8 +41,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
-    "install": "^0.13.0",
-    "npm": "^11.6.0",
     "prisma": "^6.19.2",
     "tailwindcss": "^4",
     "typescript": "^5"
