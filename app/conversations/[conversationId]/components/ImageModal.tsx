@@ -23,7 +23,7 @@ const ImageModal:React.FC<ImageModalProps> = ({
     <Modal 
     isOpen={isOpen}
     onClose={onClose} >
-      <div className="w-80 h-80 p-1">
+      <div className="w-80 h-80 p-1 relative">
         <Image 
         alt="Image"
         className="object-cover"

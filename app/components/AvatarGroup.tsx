@@ -28,13 +28,15 @@ const AvatarGroup: React.FC<AvatarGroupProps> = ({
             inline-block
             rounded-full
             overflow-hidden
-            h-[21px]
-            w-[21px]
+            h-5.25
+            w-5.25
             ${positionMap[index as keyof typeof positionMap]}
         `} >
             <Image 
             alt='Avatar'
             fill
+            sizes='(max-width: 768px) 100vw, (max-width: 1200px) h-8 w-8'
+            className='object-cover'
             src={user?.image || '/images/avatar.jpg'} />
         </div>
       ))}

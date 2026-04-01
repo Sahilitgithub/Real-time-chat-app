@@ -24,7 +24,9 @@ const Avatar:FC<AvatarProps> = ({
                 alt="Avatar"
                 src={user?.image || "/images/avatar.jpg"} 
                 fill 
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) h-8 w-8" />
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) h-8 w-8"
+                 />
             </figure>
         </div>
         {isActive && (
